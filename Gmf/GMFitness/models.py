@@ -12,7 +12,7 @@ class Usuarios(models.model):
         return f"""Nombre: {self.nombre} 
         Email: {self.email}
         Numero identidad: {self.numeroIdentidad}
-        """
+        """ 
 
 # Tipos de Usuarios 
 class Nutrisionistas(models.model):
@@ -132,7 +132,7 @@ class Membresias(models.model):
 
 class Pagos(models.model):
     monto = models.IntegerField()
-    echa = models.DateField()
+    fecha = models.DateField()
     ESTADO =(
             ("pendiente", "PENDIENTE")
             ("rechazado", "RECHAZADO")
