@@ -115,9 +115,9 @@ class MembresiasAdmin(admin.ModelAdmin):
 
 @admin.register(Pagos)
 class PagosAdmin(admin.ModelAdmin):
-    list_display = ['id', 'membresia', 'monto', 'echa', 'estado']
+    list_display = ['id', 'membresia', 'monto', 'fecha', 'estado']
     search_fields = ['membresia__cliente__numero_identidad__nombre_usuario']
-    list_filter = ['estado', 'echa']
+    list_filter = ['estado', 'fecha']
     list_editable = ['estado']
 
 
